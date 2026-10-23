@@ -1674,7 +1674,7 @@ pub fn now() -> f64 {
     {
         #[cfg(not(feature = "web"))]
         {
-            compile_error!("Web target requires the `web` feature")
+            0.0
         }
         #[cfg(feature = "web")]
         {
